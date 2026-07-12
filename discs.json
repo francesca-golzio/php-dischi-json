@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "cover_url": "https://example.com/covers/nevermind.jpg",
+    "release_year": 1991,
+    "genre": "Grunge"
+  },
+  {
+    "title": "Creep",
+    "artist": "Radiohead",
+    "cover_url": "https://example.com/covers/pablo_honey.jpg",
+    "release_year": 1992,
+    "genre": "Alternative Rock"
+  },
+  {
+    "title": "Waterfalls",
+    "artist": "TLC",
+    "cover_url": "https://example.com/covers/crazysexycool.jpg",
+    "release_year": 1994,
+    "genre": "R&B"
+  },
+  {
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "cover_url": "https://example.com/covers/whats_the_story_morning_glory.jpg",
+    "release_year": 1995,
+    "genre": "Britpop"
+  },
+  {
+    "title": "Wannabe",
+    "artist": "Spice Girls",
+    "cover_url": "https://example.com/covers/spice.jpg",
+    "release_year": 1996,
+    "genre": "Pop"
+  },
+  {
+    "title": "...Baby One More Time",
+    "artist": "Britney Spears",
+    "cover_url": "https://example.com/covers/baby_one_more_time.jpg",
+    "release_year": 1998,
+    "genre": "Pop"
+  },
+  {
+    "title": "I Want It That Way",
+    "artist": "Backstreet Boys",
+    "cover_url": "https://example.com/covers/millennium.jpg",
+    "release_year": 1999,
+    "genre": "Pop"
+  }
+]
