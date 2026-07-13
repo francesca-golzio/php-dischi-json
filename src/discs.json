@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Grace",
+    "artist": "Jeff Buckley",
+    "cover_url": "https://www.xsnoize.com/wp-content/webp-express/webp-images/uploads/2018/04/13010853_1265563306791344_9153775832444686016_n.png.webp",
+    "release_year": 1994,
+    "genre": "Alternative Rock"
+  },
+  {
+    "title": "Pablo Honey",
+    "artist": "Radiohead",
+    "cover_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHWGPXR4uTzswqmak_kGCWS_GYXGepRKZJCU2C3MH0-NiWtrY7kaLbU33&s=10",
+    "release_year": 1992,
+    "genre": "Alternative Rock"
+  },
+  {
+    "title": "CrazySexyCool",
+    "artist": "TLC",
+    "cover_url": "https://happyvalleyshop.com/cdn/shop/files/TLC_600x.png?v=1701749480",
+    "release_year": 1994,
+    "genre": "R&B"
+  },
+  {
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "cover_url": "https://www.xsnoize.com/wp-content/uploads/2017/05/1491825776215-radiohead-okcomputer.png",
+    "release_year": 1997,
+    "genre": "Alternative Rock"
+  },
+  {
+    "title": "Spice",
+    "artist": "Spice Girls",
+    "cover_url": "https://www.udiscovermusic.com/wp-content/uploads/2018/11/Spice-Girls-Spice-album-cover-820.jpg",
+    "release_year": 1996,
+    "genre": "Pop"
+  },
+  {
+    "title": "The Chronic",
+    "artist": "Dr. Dre",
+    "cover_url": "https://m.media-amazon.com/images/I/71mlUmU1TVL._UF350,350_QL50_.jpg",
+    "release_year": 1992,
+    "genre": "Hip Hop"
+  },
+  {
+    "title": "Millennium",
+    "artist": "Backstreet Boys",
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b2732160c02bc56f192df0f4986b",
+    "release_year": 1999,
+    "genre": "Pop"
+  }
+]
