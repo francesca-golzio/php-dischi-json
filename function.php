@@ -1,8 +1,8 @@
 <?php
   // get (stringified) file content
-  $list = file_get_contents('./src/discs.json');
+  $list = file_get_contents('./src/albums.json');
   //var_dump($list);
   
   // convert to php associative array
-  $discs = json_decode($list, true);
-  //var_dump($discs);
+  $albums = json_decode($list, true);
+  //var_dump($albums);

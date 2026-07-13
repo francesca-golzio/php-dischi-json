@@ -20,7 +20,7 @@
 <body>
 
 <header>
-  <h1>PHP Discs</h1>
+  <h1>PHP Albums</h1>
   <h2>Music from the 90's</h2>
 </header>
 
@@ -28,21 +28,21 @@
 
   <div class="container">
     
-    <!-- Print each disc data in page -->
+    <!-- Print each album data in page -->
     <div class="collection">
 
       <?php 
-        foreach($discs as $disc) {
-          echo "<div class='disc_card card col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2'>
+        foreach($albums as $album) {
+          echo "<div class='album_card card col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2'>
                   <div class='card-header'>
-                    <h5 class='card-title'>" . $disc['title'] . "</h5>
-                    <h6 class='card-subtitle'>" . $disc['artist'] . "</h6>
+                    <h5 class='card-title'>" . $album['title'] . "</h5>
+                    <h6 class='card-subtitle'>" . $album['artist'] . "</h6>
                   </div>
                   <div class='card-body'>
-                    <img src='" . $disc['cover_url'] . "' class='cover' alt='" . $disc['title'] .  "album cover'>
+                    <img src='" . $album['cover_url'] . "' class='cover' alt='" . $album['title'] .  "album cover'>
                   <div class='info'>
-                      <p class='card-text genre'>" . $disc['genre'] . "</p>
-                      <p class='card-text'>" . $disc['release_year'] . "</p>
+                      <p class='card-text genre'>" . $album['genre'] . "</p>
+                      <p class='card-text'>" . $album['release_year'] . "</p>
                     </div>
                   </div>
                 </div>";
@@ -54,7 +54,7 @@
 </main>
 
 <footer>
-  <p>Francesca Golzio &copy; 2026 PHP Dischi</p>
+  <p>Francesca Golzio &copy; 2026 PHP Albums</p>
 </footer>
 
 </body>

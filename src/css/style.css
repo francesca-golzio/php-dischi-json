@@ -46,7 +46,7 @@ header {
 
 /* __ Main __ */
 
-/* Discs container */
+/* Albums container */
 div.collection {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +54,7 @@ div.collection {
   gap: 2rem;
 }
 
-/* Disc card */
+/* Albums card */
 div.card {
   color: #2b86aa;
   background-color: #151f29;
@@ -91,7 +91,7 @@ div.card {
     flex-direction: column;
     padding: 0;
 
-    /* disc cover image */
+    /* album cover image */
     img.cover {
       aspect-ratio: 1/0;
       margin-top: 0.5rem;
