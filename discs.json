@@ -21,11 +21,11 @@
     "genre": "R&B"
   },
   {
-    "title": "(What's the Story) Morning Glory?",
-    "artist": "Oasis",
+    "title": "OK Computer",
+    "artist": "Radiohead",
     "cover_url": "https://picsum.photos/200?random=4",
-    "release_year": 1995,
-    "genre": "Britpop"
+    "release_year": 1997,
+    "genre": "Alternative Rock"
   },
   {
     "title": "Spice",

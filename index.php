@@ -50,8 +50,12 @@
       ?>
 
   </div>
-
+  
 </main>
+
+<footer>
+  <p>Francesca Golzio &copy; 2026 PHP Dischi</p>
+</footer>
 
 </body>
 </html>
