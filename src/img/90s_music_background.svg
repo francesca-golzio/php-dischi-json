@@ -1,0 +1,74 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    90s Music Minimal Background Pattern
+    Style: Essential, Soft, Watermark effect
+    Elements: Cassette, CD, Walkman, Music Note
+  -->
+  
+  <defs>
+    <style>
+      .icon {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        <!-- opacity: 0.15; -->
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+
+  <!-- Group for icons to apply color easily (defaulting to a soft gray) -->
+  <g class="icon" color="#888">
+    
+    <!-- Cassette Tape (Top Left) -->
+    <g transform="translate(50, 50) rotate(-15)">
+      <rect x="0" y="0" width="80" height="50" rx="4" />
+      <rect x="10" y="10" width="60" height="25" rx="2" />
+      <circle cx="25" cy="22" r="6" />
+      <circle cx="55" cy="22" r="6" />
+      <path d="M30 40 L50 40" />
+    </g>
+
+    <!-- CD (Top Right) -->
+    <g transform="translate(250, 70) rotate(10)">
+      <circle cx="40" cy="40" r="40" />
+      <circle cx="40" cy="40" r="10" />
+      <circle cx="40" cy="40" r="4" />
+      <!-- Shine lines -->
+      <line x1="40" y1="10" x2="40" y2="20" />
+      <line x1="70" y1="40" x2="60" y2="40" />
+    </g>
+
+    <!-- Walkman (Bottom Left) -->
+    <g transform="translate(60, 240) rotate(5)">
+      <rect x="0" y="0" width="60" height="90" rx="5" />
+      <rect x="10" y="15" width="40" height="35" rx="2" />
+      <circle cx="15" cy="65" r="4" />
+      <circle cx="30" cy="65" r="4" />
+      <circle cx="45" cy="65" r="4" />
+      <rect x="10" y="75" width="40" height="5" rx="1" />
+    </g>
+
+    <!-- Music Notes (Scattered) -->
+    <g transform="translate(280, 260) scale(1.2)">
+      <path d="M10 30 L10 5 C 10 5, 25 5, 25 15" />
+     <!-- <circle cx="5" cy="30" r="5" fill="currentColor" opacity="0.15" /> -->
+      <circle cx="5" cy="30" r="5" fill="currentColor" opacity="0.5" />
+    </g>
+    
+    <!-- <g transform="translate(180, 180) rotate(45) scale(0.8)">
+      <path d="M10 25 L10 0 L25 5 L25 30" />
+      <line x1="10" y1="10" x2="25" y2="15" />
+      <circle cx="5" cy="25" r="5" fill="currentColor" opacity="0.15" />
+      <circle cx="20" cy="30" r="5" fill="currentColor" opacity="0.15" />
+    </g> -->
+
+    <!-- Memphis-style minimal shapes -->
+    <!-- <circle cx="200" cy="80" r="3" fill="currentColor" opacity="0.1" /> -->
+    <!-- <path d="M350 180 L370 200 M370 180 L350 200" stroke-width="1" opacity="0.1" /> -->
+    <!-- <rect x="150" y="320" width="10" height="10" transform="rotate(30 155 325)" opacity="0.1" /> -->
+    
+  </g>
+</svg>

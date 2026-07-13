@@ -1,0 +1,115 @@
+/* __ CSS Reset __ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* __ Commons __ */
+
+body {
+  background-color: #1e2d3b;
+  background-image:
+    url(../img/90s_music_background.svg),
+    linear-gradient(157deg, #246d8a 0%, #24556c 10%, #1f3140 30%, #1e2d3b 50%, #1f3140 70%, #245268 90%, #246d8a 100%);
+}
+
+
+/* __ Header __ */
+
+header {
+  color: #2b86aa;
+  text-align: center;
+  background-color: #1e2d3bba;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(1.5px);
+  padding: 1rem;
+  margin-bottom: 3rem;
+
+  h1 {
+    color: #d47955;
+  }
+}
+
+/* __ Main __ */
+
+/* Discs container */
+div.collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Disc card */
+div.card {
+  color: #2b86aa;
+  background-color: #151f29;
+  /* border: 0.5px solid #d47955; */
+  border-radius: 1.5rem;
+  box-shadow: 1px 0 10px #7eaec2;
+  padding: 1.5rem;
+  width: 18rem;
+
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    .card-title {
+      color: #d47955;
+      font-size: 1.75rem;
+      padding: 0.75rem 0 0 0;
+      margin-bottom: 0;
+    }
+
+    .card-subtitle {
+      color: #7eaec2;
+      font-size: 1.2rem;
+      text-align: right;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    /* disc cover image */
+    img.cover {
+      aspect-ratio: 1/0;
+      margin-top: 0.5rem;
+      /* border-radius: 0.2rem; */
+      width: 100%;
+      transform: rotate(3deg);
+    }
+
+    .info {
+      align-self: flex-end;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+
+      p {
+        color: #d47955;
+        font-size: 0.8rem;
+        border-radius: 25rem;
+        margin-bottom: 0;
+      }
+
+      p.genre {
+        color: #2b86aa;
+        border-color: #d47955;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+
+  }
+}
