@@ -39,7 +39,7 @@
             <input type="text" id="artist" name="artist" class="card-subtitle" placeholder="Artist" required>
           </div>
           <div class="card-body form-control">
-            <input type="text" id="cover_url" name="cover_url" class="cover" placeholder="Cover image link">
+            <textarea rows="7" id="cover_url" name="cover_url" class="cover" placeholder="Cover image link"></textarea>
             <div class="info">
               <input type="text" id="genre" name="genre" class="card-text genre" placeholder="Genre">
               <input type="number" id="release_year" name="release_year" class="card-text" placeholder="Year" min="1990" max="1999">
@@ -67,6 +67,7 @@
         }
       ?>
 
+    </div>
   </div>
   
 </main>
