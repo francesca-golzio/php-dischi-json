@@ -35,13 +35,13 @@
         <label>Add your 90's favorite album!</label>
         <form action="server.php" method="POST">
           <div class="card-header form-control">
-            <input type="text" id="title" name="title" class="card-title" placeholder="Album title" required>
-            <input type="text" id="artist" name="artist" class="card-subtitle" placeholder="Artist" required>
+            <input type="text" minlength="1" maxlength="200" id="title" name="title" class="card-title" placeholder="Album title" required>
+            <input type="text" minlength="1" maxlength="200" id="artist" name="artist" class="card-subtitle" placeholder="Artist" required>
           </div>
           <div class="card-body form-control">
             <textarea rows="7" id="cover_url" name="cover_url" class="cover" placeholder="Cover image link"></textarea>
             <div class="info">
-              <input type="text" id="genre" name="genre" class="card-text genre" placeholder="Genre">
+              <input type="text" minlength="1" maxlength="30" id="genre" name="genre" class="card-text genre" placeholder="Genre">
               <input type="number" id="release_year" name="release_year" class="card-text" placeholder="Year" min="1990" max="1999">
             </div>
           </div>
@@ -53,14 +53,14 @@
         foreach($albums as $album) {
           echo "<div class='album_card card col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2'>
                   <div class='card-header'>
-                    <h5 class='card-title'>" . $album['title'] . "</h5>
-                    <h6 class='card-subtitle'>" . $album['artist'] . "</h6>
+                    <h5 class='card-title'>" . htmlspecialchars($album['title']) . "</h5>
+                    <h6 class='card-subtitle'>" . htmlspecialchars($album['artist']) . "</h6>
                   </div>
                   <div class='card-body'>
-                    <img src='" . $album['cover_url'] . "' class='cover' alt='" . $album['title'] .  "album cover'>
+                    <img src='" . htmlspecialchars($album['cover_url']) . "' class='cover' alt='" . htmlspecialchars($album['title']) .  "album cover'>
                   <div class='info'>
-                      <p class='card-text genre'>" . $album['genre'] . "</p>
-                      <p class='card-text'>" . $album['release_year'] . "</p>
+                      <p class='card-text genre'>" . htmlspecialchars($album['genre']) . "</p>
+                      <p class='card-text'>" . htmlspecialchars($album['release_year']) . "</p>
                     </div>
                   </div>
                 </div>";

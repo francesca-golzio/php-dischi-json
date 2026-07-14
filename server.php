@@ -10,15 +10,29 @@
   $albums = json_decode($json_albums, true);
   //var_dump($albums);
 
-
+    
   /* __ Get new album __ */
   $new_album = [
 
-    "title" => $_POST['title'],    
-    "artist" => $_POST['artist'],
-    "cover_url" => $_POST['cover_url'],
-    "genre" => $_POST['genre'],
-    "release_year" => $_POST['release_year']
+    "title" =>  isset($_POST['title']) && !empty(trim($_POST['title'])) && strlen(trim($_POST['title'])) >= 1 && strlen(trim($_POST['title'])) < 200 
+      ? trim($_POST['title']) 
+      : 'Unknown', 
+
+    "artist" => isset($_POST['artist']) && !empty(trim($_POST['artist'])) && strlen(trim($_POST['artist'])) >= 1 && strlen(trim($_POST['artist'])) < 200 
+      ? trim($_POST['artist']) 
+      : 'Unknown',
+
+    "cover_url" => isset($_POST['cover_url']) && !empty(trim($_POST['cover_url'])) && strlen(trim($_POST['cover_url'])) >= 1 && strlen(trim($_POST['cover_url'])) < 500 && filter_var(trim($_POST['cover_url']), FILTER_VALIDATE_URL) 
+      ? trim($_POST['cover_url']) 
+      : 'https://placehold.co/200?text=missing%0Acover%0Aimage&font=poppins',
+
+    "genre" => isset($_POST['genre']) && !empty(trim($_POST['genre'])) && strlen(trim($_POST['genre'])) >= 1 && strlen(trim($_POST['genre'])) < 30 
+      ? trim($_POST['genre']) 
+      : 'Unknown',
+    
+    "release_year" => isset($_POST['release_year']) && !empty(trim($_POST['release_year'])) && (int)(trim($_POST['release_year'])) >= 1990 && (int)(trim($_POST['release_year'])) <= 1999 
+      ? trim($_POST['release_year']) 
+      : 'Unknown',
 
   ];  
   
