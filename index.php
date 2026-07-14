@@ -31,6 +31,24 @@
     <!-- Print each album data in page -->
     <div class="collection">
 
+      <div class="add_album_card card col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+        <label>Add your 90's favorite album!</label>
+        <form action="server.php" method="POST">
+          <div class="card-header form-control">
+            <input type="text" id="title" name="title" class="card-title" placeholder="Album title" required>
+            <input type="text" id="artist" name="artist" class="card-subtitle" placeholder="Artist" required>
+          </div>
+          <div class="card-body form-control">
+            <input type="text" id="cover_url" name="cover_url" class="cover" placeholder="Cover image link">
+            <div class="info">
+              <input type="text" id="genre" name="genre" class="card-text genre" placeholder="Genre">
+              <input type="number" id="release_year" name="release_year" class="card-text" placeholder="Year" min="1990" max="1999">
+            </div>
+          </div>
+          <button class="btn" name="submit" type="submit">Add Album</button>
+        </form>
+      </div>
+
       <?php 
         foreach($albums as $album) {
           echo "<div class='album_card card col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2'>
